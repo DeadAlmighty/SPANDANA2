@@ -1,0 +1,5 @@
+method,name,family,threshold,accuracy,precision,sensitivity,specificity,f1,roc_auc,pr_auc
+sokolow,Sokolow–Lyon,criterion,3.8295,0.9381,0.4079,0.6139,0.9546,0.4901,0.9181,0.4384
+cornell,Cornell,criterion,2.779,0.8916,0.2407,0.5743,0.9078,0.3392,0.833,0.2402
+perceptron,Perceptron,ml,0.1745,0.9535,0.5189,0.5446,0.9743,0.5314,0.9322,0.5174
+cnn,CNN,ml,0.9560999870300293,0.9727,0.72,0.7129,0.9859,0.7164,0.9802,0.7813

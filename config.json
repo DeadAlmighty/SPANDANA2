@@ -1,0 +1,53 @@
+{
+  "dataset": {
+    "version": "1.0.3",
+    "zip_url": "https://physionet-open.s3.amazonaws.com/ptb-xl/ptb-xl-1.0.3.zip",
+    "physionet_file_base": "https://physionet.org/files/ptb-xl/1.0.3",
+    "raw_dir": "data/ptbxl",
+    "fs": 100,
+    "signal_seconds": 10,
+    "n_leads": 12,
+    "lead_order": ["I", "II", "III", "aVR", "aVL", "aVF", "V1", "V2", "V3", "V4", "V5", "V6"]
+  },
+  "labels": {
+    "lvh_likelihood_threshold": 100,
+    "val_fold": 9,
+    "test_fold": 10
+  },
+  "preprocessing": {
+    "out_dir": "data/preprocessed",
+    "min_seconds": 9.9
+  },
+  "features": {
+    "out_path": "data/metadata/feature_rows.csv",
+    "sokolow_threshold_mV": 3.5
+  },
+  "perceptron": {
+    "random_state": 42,
+    "penalties": ["l2", "l1", "elasticnet", null],
+    "alphas": [0.0001, 0.001, 0.01],
+    "max_iter": 2000
+  },
+  "cnn": {
+    "run_dir": "data/cnn_runs",
+    "batch_size": 64,
+    "epochs": 40,
+    "patience": 6,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "device": "auto",
+    "num_workers": 0,
+    "channels": [32, 64, 96],
+    "dropout": 0.3
+  },
+  "artifacts": {
+    "models_dir": "backend/models",
+    "metrics_json": "backend/models/metrics.json",
+    "reports_dir": "data/reports",
+    "metadata_dir": "data/metadata"
+  },
+  "api": {
+    "host": "127.0.0.1",
+    "port": 8000
+  }
+}

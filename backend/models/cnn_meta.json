@@ -1,0 +1,26 @@
+{
+  "architecture": "SpandanaCNN (3x Conv1d+BN+ReLU+MaxPool, dense head)",
+  "channels": [
+    32,
+    64,
+    96
+  ],
+  "dropout": 0.3,
+  "input": "12 leads x 1000 samples (10 s @ 100 Hz), per-lead z-score",
+  "normalization_source": "backend/models/preprocessing.json (train-only fit)",
+  "imbalance": "BCEWithLogitsLoss pos_weight=17.71",
+  "epochs_run": 21,
+  "best_val_auprc": 0.7716045841497446,
+  "best_val_auroc": 0.97676,
+  "device": "cpu",
+  "torch": "2.15.0+cpu",
+  "python": "3.12.16",
+  "trained_samples": {
+    "train": 16597,
+    "val": 2070
+  },
+  "threshold": 0.9560999870300293,
+  "threshold_tuned_on": "validation fold 9 (max F1)",
+  "val_auprc": 0.7716045841497446,
+  "val_auroc": 0.9733515866256316
+}

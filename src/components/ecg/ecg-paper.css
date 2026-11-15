@@ -1,0 +1,15 @@
+/* SPANDANA ECG paper — light red millimetre grid, drawn in CSS so cells
+   stay square regardless of the SVG trace stretching. */
+.ecg-paper {
+  background-color: #fffdfb;
+  background-image:
+    linear-gradient(to right, rgba(203, 86, 96, 0.32) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(203, 86, 96, 0.32) 1px, transparent 1px),
+    linear-gradient(to right, rgba(203, 86, 96, 0.13) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(203, 86, 96, 0.13) 1px, transparent 1px);
+  background-size:
+    25px 25px,
+    25px 25px,
+    5px 5px,
+    5px 5px;
+}

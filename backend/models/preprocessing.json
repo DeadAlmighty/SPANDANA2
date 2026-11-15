@@ -1,0 +1,57 @@
+{
+  "lead_order": [
+    "I",
+    "II",
+    "III",
+    "aVR",
+    "aVL",
+    "aVF",
+    "V1",
+    "V2",
+    "V3",
+    "V4",
+    "V5",
+    "V6"
+  ],
+  "fs": 100,
+  "signal_len": 1000,
+  "unit": "mV",
+  "normalization": "per-lead z-score",
+  "fitted_on": "train split only (strat_fold 1-8)",
+  "mean": [
+    -0.001737,
+    -0.001432,
+    0.000305,
+    0.001566,
+    -0.000969,
+    -0.000539,
+    0.000147,
+    -0.000984,
+    -0.001565,
+    -0.001361,
+    -0.00077,
+    -0.002467
+  ],
+  "std": [
+    0.159134,
+    0.163484,
+    0.166404,
+    0.138241,
+    0.140802,
+    0.144384,
+    0.231615,
+    0.335073,
+    0.332521,
+    0.29533,
+    0.269126,
+    0.278128
+  ],
+  "amplitude_convention": "median-of-trace baseline; R = max-baseline; S = baseline-min (mirrors src/lib/ecg/real-signal.ts)",
+  "perceptron_features": [
+    "S_V1",
+    "R_V5",
+    "R_V6",
+    "R_aVL",
+    "S_V3"
+  ]
+}

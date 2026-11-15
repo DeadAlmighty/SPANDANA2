@@ -1,0 +1,85 @@
+{
+  "features": [
+    "sv1",
+    "rv5",
+    "rv6",
+    "ravl",
+    "sv3"
+  ],
+  "best_params": {
+    "penalty": "l1",
+    "alpha": 0.001
+  },
+  "val_average_precision": 0.42277323657313104,
+  "val_auroc": 0.9257867813419304,
+  "calibration": {
+    "type": "platt",
+    "a": 0.05701273897712959,
+    "b": -2.5906050607310256
+  },
+  "threshold": 0.1745,
+  "threshold_tuned_on": "validation fold 9 (max F1)",
+  "tuning_log": [
+    {
+      "penalty": "l2",
+      "alpha": 0.0001,
+      "val_ap": 0.34258
+    },
+    {
+      "penalty": "l2",
+      "alpha": 0.001,
+      "val_ap": 0.30615
+    },
+    {
+      "penalty": "l2",
+      "alpha": 0.01,
+      "val_ap": 0.25764
+    },
+    {
+      "penalty": "l1",
+      "alpha": 0.0001,
+      "val_ap": 0.31488
+    },
+    {
+      "penalty": "l1",
+      "alpha": 0.001,
+      "val_ap": 0.42277
+    },
+    {
+      "penalty": "l1",
+      "alpha": 0.01,
+      "val_ap": 0.37112
+    },
+    {
+      "penalty": "elasticnet",
+      "alpha": 0.0001,
+      "val_ap": 0.31348
+    },
+    {
+      "penalty": "elasticnet",
+      "alpha": 0.001,
+      "val_ap": 0.24942
+    },
+    {
+      "penalty": "elasticnet",
+      "alpha": 0.01,
+      "val_ap": 0.2796
+    },
+    {
+      "penalty": "None",
+      "alpha": 0.0001,
+      "val_ap": 0.39207
+    },
+    {
+      "penalty": "None",
+      "alpha": 0.001,
+      "val_ap": 0.39207
+    },
+    {
+      "penalty": "None",
+      "alpha": 0.01,
+      "val_ap": 0.39207
+    }
+  ],
+  "label_semantics": "1 = LVH_positive (SCP 'LVH' likelihood >= 100), 0 = control (no LVH statement; NOT necessarily healthy)"
+}

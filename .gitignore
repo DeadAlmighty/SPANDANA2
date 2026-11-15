@@ -1,0 +1,24 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+.next/
+dist/
+
+# Environment
+.env
+.env.local
+
+# Dataset and large generated files
+data/ptb-xl/
+*.npy
+*.npz
+*.log
+
+# System
+.DS_Store
+Thumbs.db

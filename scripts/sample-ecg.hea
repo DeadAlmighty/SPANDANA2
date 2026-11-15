@@ -1,0 +1,13 @@
+sample-ecg 12 500 10:00:00 12/11/2026
+sample-ecg.dat 16 200 1024 0 0 0 0 0 0 0 0 0 ,I,
+sample-ecg.dat 16 200 1024 0 0 0 0 0 0 0 0 0 ,II,
+sample-ecg.dat 16 200 1024 0 0 0 0 0 0 0 0 0 ,III,
+sample-ecg.dat 16 200 1024 0 0 0 0 0 0 0 0 0 ,aVR,
+sample-ecg.dat 16 200 1024 0 0 0 0 0 0 0 0 0 ,aVL,
+sample-ecg.dat 16 200 1024 0 0 0 0 0 0 0 0 0 ,aVF,
+sample-ecg.dat 16 200 1024 0 0 0 0 0 0 0 0 0 ,V1,
+sample-ecg.dat 16 200 1024 0 0 0 0 0 0 0 0 0 ,V2,
+sample-ecg.dat 16 200 1024 0 0 0 0 0 0 0 0 0 ,V3,
+sample-ecg.dat 16 200 1024 0 0 0 0 0 0 0 0 0 ,V4,
+sample-ecg.dat 16 200 1024 0 0 0 0 0 0 0 0 0 ,V5,
+sample-ecg.dat 16 200 1024 0 0 0 0 0 0 0 0 0 ,V6,
